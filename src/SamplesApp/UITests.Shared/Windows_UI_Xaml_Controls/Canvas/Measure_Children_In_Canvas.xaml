@@ -10,7 +10,14 @@
 
 	<Grid>
 		<Canvas>
-			<Border x:Name="BBorderInCanvas" Background="Red"  HorizontalAlignment="Left"  Height="50" Width="50" />
+			<Canvas>
+				<Border x:Name="BBorderInCanvas" Background="Red" Height="100" Width="100" />
+			</Canvas>
+			<Border Background="Blue" Canvas.Top="20" Canvas.Left="50" Height="50" Width="50" />
+			<StackPanel Canvas.Top="100" Canvas.Left="50">
+				<Border Background="Yellow" Height="50" Width="50" />
+				<Border Background="DarkGray" Height="50" Width="50" />
+			</StackPanel>
 		</Canvas>
 		<Border x:Name="BBorderOutCanvas" Background="Green" HorizontalAlignment="Center"  Height="50" Width="50"/>
 	</Grid>
